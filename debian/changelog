@@ -1,0 +1,5 @@
+mdns-publisher (0.9.2) bionic; urgency=medium
+
+  * Initial release.
+
+ -- jedrek <jedr.ka@gmail.com>  Tue, 18 May 2021 01:33:49 +0200

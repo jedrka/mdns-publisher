@@ -1,0 +1,15 @@
+Source: mdns-publisher
+Maintainer: Jedrzej Kalisiak <jedr.ka@gmail.com>
+Section: python
+Priority: optional
+Build-Depends: debhelper-compat (= 10),
+               dh-python,
+               python-all,
+Standards-Version: 4.1.1
+
+Package: mdns-publisher
+Architecture: all
+Depends: python-avahi, avahi-daemon, ${python:Depends}, ${misc:Depends}
+Description: mDNS hostname aliases publisher
+ This package installs mDNS publisher which you can use to 
+ broadcast hostname aliases in local network

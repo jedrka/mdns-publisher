@@ -1,0 +1,12 @@
+[Unit]
+Description=Publish %I as alias for %H.local via mdns
+
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/mdns-publish-cname %I
+
+[Install]
+Wants=avahi-daemon.service
+WantedBy=multi-user.target
+
