@@ -1,4 +1,4 @@
-mdns-publisher (0.9.4-1) xenial; urgency=medium
+mdns-publisher (0.9.4-1+xenial1) xenial; urgency=medium
 
   * Fixes in building and service unit
 
