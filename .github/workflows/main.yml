@@ -23,6 +23,7 @@ jobs:
       - name: Run a one-line script
         run: |
           cd $GITHUB_WORKSPACE
+          mk-build-deps -i -r
           dpkg-buildpackage -us -uc -b
       - name: Upload deb
         uses: actions/upload-artifact@v2.2.3
