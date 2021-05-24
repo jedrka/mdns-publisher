@@ -1,3 +1,45 @@
+mdns-publisher (0.9.4+nmu1ubuntu4) xenial; urgency=medium
+
+  * Non-maintainer upload.
+
+ -- Jedrzej Kalisiak <jedr.ka@gmail.com>  Tue, 18 May 2021 23:38:01 +0200
+
+mdns-publisher (0.9.4+nmu1ubuntu3) xenial; urgency=medium
+
+  * Non-maintainer upload.
+
+ -- Jedrzej Kalisiak <jedr.ka@gmail.com>  Tue, 18 May 2021 23:29:54 +0200
+
+mdns-publisher (0.9.4+nmu1ubuntu2) xenial; urgency=medium
+
+  * Non-maintainer upload.
+
+ -- Jedrzej Kalisiak <jedr.ka@gmail.com>  Tue, 18 May 2021 22:37:03 +0200
+
+mdns-publisher (0.9.4+nmu1ubuntu1) xenial; urgency=medium
+
+  * build for xenial
+
+ -- Jedrzej Kalisiak <jedr.ka@gmail.com>  Tue, 18 May 2021 22:17:45 +0200
+
+mdns-publisher (0.9.4+nmu1) bionic; urgency=medium
+
+  * Non-maintainer upload.
+
+ -- Jedrzej Kalisiak <jedr.ka@gmail.com>  Tue, 18 May 2021 20:45:03 +0200
+
+mdns-publisher (0.9.4) bionic; urgency=medium
+
+  * Try upload 2
+
+ -- Jedrzej Kalisiak <jedr.ka@gmail.com>  Tue, 18 May 2021 20:35:59 +0200
+
+mdns-publisher (0.9.3) bionic; urgency=medium
+
+  * Try upload
+
+ -- Jedrzej Kalisiak <jedr.ka@gmail.com>  Tue, 18 May 2021 20:15:57 +0200
+
 mdns-publisher (0.9.2) bionic; urgency=medium
 
   * Initial release.
