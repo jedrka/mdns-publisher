@@ -1,3 +1,9 @@
+mdns-publisher (0.9.4ubuntu1) xenial; urgency=medium
+
+  * Fixes in building and service unit
+
+ -- Jedrzej Kalisiak <jedr.ka@gmail.com>  Mon, 24 May 2021 22:55:06 +0200
+
 mdns-publisher (0.9.4+nmu1ubuntu4) xenial; urgency=medium
 
   * Non-maintainer upload.
