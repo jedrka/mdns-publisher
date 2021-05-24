@@ -29,8 +29,8 @@ jobs:
           sudo apt-get install devscripts equivs -y
           sudo mk-build-deps -i -r
           dpkg-buildpackage -us -uc -b
-          ll
-          ll ../
+          ls -la
+          ls -la ../
           
       - name: Upload deb
         uses: actions/upload-artifact@v2.2.3
