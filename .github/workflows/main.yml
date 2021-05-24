@@ -23,7 +23,7 @@ jobs:
       - name: Run a one-line script
         run: |
           cd $GITHUB_WORKSPACE
-          sudo apt-get install devscripts -y
+          sudo apt-get install devscripts equivs -y
           sudo mk-build-deps -i -r
           dpkg-buildpackage -us -uc -b
       - name: Upload deb
