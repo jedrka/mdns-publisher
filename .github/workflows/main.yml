@@ -26,8 +26,8 @@ jobs:
         run: |
           cd $GITHUB_WORKSPACE/repo/
           pwd
-          sudo apt-get install devscripts equivs -y
-          sudo mk-build-deps -i -r
+          apt-get install devscripts equivs -y
+          mk-build-deps -i -r
           dpkg-buildpackage -us -uc -b
           ls -la
           ls -la ../          
@@ -53,8 +53,8 @@ jobs:
         run: |
           cd $GITHUB_WORKSPACE/repo/
           pwd
-          sudo apt-get install devscripts equivs -y
-          sudo mk-build-deps -i -r
+          apt-get install devscripts equivs -y
+          mk-build-deps -i -r
           dpkg-buildpackage -us -uc -b
           ls -la
           ls -la ../          
