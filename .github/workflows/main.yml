@@ -26,6 +26,7 @@ jobs:
         run: |
           cd $GITHUB_WORKSPACE/repo/
           pwd
+          apt update
           apt-get install devscripts equivs -y
           mk-build-deps -i -r
           dpkg-buildpackage -us -uc -b
@@ -53,6 +54,7 @@ jobs:
         run: |
           cd $GITHUB_WORKSPACE/repo/
           pwd
+          apt update
           apt-get install devscripts equivs -y
           mk-build-deps -i -r
           dpkg-buildpackage -us -uc -b
