@@ -28,7 +28,7 @@ jobs:
           pwd
           apt update
           apt-get install devscripts equivs -y
-          mk-build-deps -i
+          mk-build-deps -i || true
       - name: Upload deb1
         uses: actions/upload-artifact@v2.2.3
         with: 
@@ -64,7 +64,7 @@ jobs:
           pwd
           apt update
           apt-get install devscripts equivs -y
-          mk-build-deps -i
+          mk-build-deps -i || true
       - name: Upload deb1
         uses: actions/upload-artifact@v2.2.3
         with: 
