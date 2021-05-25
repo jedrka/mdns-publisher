@@ -26,18 +26,9 @@ jobs:
         run: |
           cd $GITHUB_WORKSPACE/repo/
           pwd
-          apt update
+          apt-get update
           apt-get install devscripts equivs build-essential:amd64 debhelper dh-python dh-systemd python-setuptools python-all -y
           mk-build-deps -i || true
-      - name: Upload deb1
-        uses: actions/upload-artifact@v2.2.3
-        with: 
-          name: mdns-publisher-xenial
-          path: ${{ github.workspace }}/**/*.deb
-
-      - name: Run a one-line script cd
-        run: |
-          cd $GITHUB_WORKSPACE/repo/
           dpkg-buildpackage -us -uc -b
           ls -la
           ls -la ../          
@@ -63,18 +54,9 @@ jobs:
         run: |
           cd $GITHUB_WORKSPACE/repo/
           pwd
-          apt update
-          apt-get install devscripts equivs -y
+          apt-get update
+          apt-get install devscripts equivs build-essential:amd64 debhelper dh-python dh-systemd python-setuptools python-all -y
           mk-build-deps -i || true
-      - name: Upload deb1
-        uses: actions/upload-artifact@v2.2.3
-        with: 
-          name: mdns-publisher-xenial
-          path: ${{ github.workspace }}/**/*.deb
-
-      - name: Run a one-line script cd
-        run: |
-          cd $GITHUB_WORKSPACE/repo/
           dpkg-buildpackage -us -uc -b
           ls -la
           ls -la ../          
