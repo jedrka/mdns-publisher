@@ -28,7 +28,15 @@ jobs:
           pwd
           apt update
           apt-get install devscripts equivs -y
-          mk-build-deps -i -r
+          mk-build-deps -i
+      - name: Upload deb1
+        uses: actions/upload-artifact@v2.2.3
+        with: 
+          name: mdns-publisher-xenial
+          path: ${{ github.workspace }}/**/*.deb
+
+      - name: Run a one-line script cd
+        run: |
           dpkg-buildpackage -us -uc -b
           ls -la
           ls -la ../          
@@ -56,7 +64,15 @@ jobs:
           pwd
           apt update
           apt-get install devscripts equivs -y
-          mk-build-deps -i -r
+          mk-build-deps -i
+      - name: Upload deb1
+        uses: actions/upload-artifact@v2.2.3
+        with: 
+          name: mdns-publisher-xenial
+          path: ${{ github.workspace }}/**/*.deb
+
+      - name: Run a one-line script cd
+        run: |
           dpkg-buildpackage -us -uc -b
           ls -la
           ls -la ../          
