@@ -31,12 +31,18 @@ jobs:
           dpkg-buildpackage -us -uc -b
           ls -la
           ls -la ../
+          ls -la ${{ github.workspace }}
+          ls -la $GITHUB_WORKSPACE
+          
           
       - name: Upload deb
         uses: actions/upload-artifact@v2.2.3
         with: 
           name: mdns-publisher-xenial
-          path: $GITHUB_WORKSPACE/*.deb
+          path: |
+            $GITHUB_WORKSPACE/*.deb
+            ${{ github.workspace }}/*.deb
+            
 
       # Runs a set of commands using the runners shell
 #       - name: Run a multi-line script
